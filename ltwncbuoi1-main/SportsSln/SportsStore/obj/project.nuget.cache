@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MYUKpFe3/kNch2W6pBWR5cflLoIVc2ao149qw91+F8xuXzGtTQ4bnKbjt5ilHhmnMCoHvhdGHpCuZgA5k2g4Ig==",
+  "dgSpecHash": "4OtwRJCVT38=",
   "success": true,
   "projectFilePath": "/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/SportsStore.csproj",
   "expectedPackageFiles": [
@@ -45,7 +45,10 @@
     "/home/codespace/.nuget/packages/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/system.text.encoding.codepages/4.7.0/system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "/home/codespace/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
+    "/home/codespace/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }
