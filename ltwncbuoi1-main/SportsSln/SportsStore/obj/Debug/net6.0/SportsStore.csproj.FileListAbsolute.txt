@@ -132,9 +132,15 @@ E:/K29/LTWEBNC/TH/ltwncbuoi1-main/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debu
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets.build.json
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets.development.json
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/scopedcss/bundle/SportsStore.styles.css
-/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/SportsStore.csproj.CopyComplete
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/SportsStore.dll
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/refint/SportsStore.dll
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/SportsStore.pdb
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/SportsStore.genruntimeconfig.cache
 /workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/ref/SportsStore.dll
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/SportsStore.sourcelink.json
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets/msbuild.SportsStore.Microsoft.AspNetCore.StaticWebAssets.props
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets/msbuild.build.SportsStore.props
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.SportsStore.props
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.SportsStore.props
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/staticwebassets.pack.json
+/workspaces/SportStore_Web/ltwncbuoi1-main/SportsSln/SportsStore/obj/Debug/net6.0/SportsSt.D81B86A7.Up2Date
