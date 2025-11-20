@@ -1,0 +1,16 @@
+@* Lấy giá trị phân quyền từ View Component's Controller *@
+@{
+    bool isAdmin = (bool)ViewBag.IsAdmin;
+}
+
+<a asp-action="Index" asp-controller="Home" class="btn btn-block btn-outline-primary">Trang chủ</a>
+
+@* Link Dashboard (Chỉ hiện nếu là Admin) *@
+@if (isAdmin)
+{
+    <a asp-action="Index" asp-controller="Dashboard" class="btn btn-block btn-outline-info">
+        Dashboard Admin
+    </a>
+}
+
+@* Các link khác của Menu... *@
