@@ -1,0 +1,80 @@
+@page "/checkout-invoice"
+@using SportStore.Client.Data
+@inject CartService CartService
+@inject NavigationManager NavigationManager // Cần để chuyển hướng người dùng
+
+<main class="page-content active max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-4xl font-extrabold text-gray-900 mb-8 border-b-4 border-lime-600 pb-2">
+        Xác Nhận Thanh Toán
+    </h2>
+
+    @if (IsOrderConfirmed)
+    {
+        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-6 rounded-lg shadow-md" role="alert">
+            <h3 class="font-bold text-2xl mb-2">🎉 ĐẶT HÀNG THÀNH CÔNG!</h3>
+            <p class="text-lg">Cảm ơn bạn đã mua hàng tại SportStore. Đơn hàng của bạn đang được xử lý.</p>
+            <p class="mt-4 font-semibold">Mã đơn hàng tạm thời: #BLAZOR@(DateTime.Now.Ticks.ToString().Substring(10))</p>
+            
+            <button @onclick="GoHome" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-lg font-bold hover:bg-blue-700 transition duration-150">
+                Tiếp Tục Mua Sắm
+            </button>
+        </div>
+    }
+    else
+    {
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Thông Tin Hóa Đơn</h3>
+
+            <div class="space-y-4 border-b pb-4">
+                <div class="flex justify-between">
+                    <span class="text-gray-600">Tổng số lượng sản phẩm:</span>
+                    <span class="font-semibold text-lg">@CartService.TotalItemCount</span>
+                </div>
+                
+                @* Lặp qua danh sách item trong giỏ hàng *@
+                @foreach(var item in CartService.Items)
+                {
+                    <div class="flex justify-between text-sm text-gray-500 ml-4">
+                        <span>@item.Name x @item.Quantity</span>
+                        <span>@item.TotalFormatted</span>
+                    </div>
+                }
+            </div>
+
+            <div class="flex justify-between text-2xl font-extrabold mt-4 pt-4 border-t-2 border-dashed border-gray-300">
+                <span>TỔNG CỘNG:</span>
+                <span class="text-red-600">@($"{(CartService.TotalAmount):N0} VNĐ")</span>
+            </div>
+
+            <button @onclick="ConfirmOrder" 
+                    disabled="@(CartService.TotalItemCount == 0)"
+                    class="w-full mt-8 bg-lime-600 text-white py-3 rounded-lg font-bold text-xl hover:bg-lime-700 transition duration-150 disabled:bg-gray-400">
+                HOÀN TẤT MUA HÀNG
+            </button>
+            <p class="text-sm text-center text-gray-500 mt-2">Bằng cách nhấn nút, bạn đồng ý thanh toán cho đơn hàng này.</p>
+        </div>
+    }
+</main>
+
+@code {
+    private bool IsOrderConfirmed = false;
+
+    // Hàm này mô phỏng quá trình xử lý thanh toán
+    private void ConfirmOrder()
+    {
+        if (CartService.TotalItemCount > 0)
+        {
+            // Bước 1: Đánh dấu đã xác nhận
+            IsOrderConfirmed = true;
+            
+            // Bước 2: Xóa giỏ hàng sau khi thanh toán thành công
+            CartService.ClearCart();
+        }
+    }
+
+    // Hàm chuyển hướng về Trang Chủ
+    private void GoHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}
